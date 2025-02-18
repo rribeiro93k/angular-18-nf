@@ -22,9 +22,6 @@
 					"configurations": {
 						"production": {
 							"target": "angular-18-nf:esbuild:production"
-						},
-						"sandbox": {
-							"target": "angular-18-nf:esbuild:sandbox"
 						}
 					}
 				},
@@ -47,7 +44,8 @@
 						"browser": "src/main.ts",
 						"polyfills": [
 							"zone.js",
-							"es-module-shims"
+							"es-module-shims",
+							"reflect-metadata"
 						],
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
